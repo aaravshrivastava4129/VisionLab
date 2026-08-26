@@ -1,0 +1,95 @@
+QMainWindow {
+    background-color: #0D1117;
+}
+
+QWidget#frame_holder {
+    background-color: #0D1117;
+    border: 2px solid #26313D;
+    border-radius: 12px;
+    margin: 33px 5px 33px 5px;
+    padding: 0px;
+}
+
+QWidget#side_panel {
+    width: 500px;
+    background-color: #000;
+}
+
+QLabel#cameraLabel {
+    color: #FF3366;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+QLabel#headingLabel {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+QLabel#compVisionLabel {
+    color: #8B949E;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+QComboBox#modeBox {
+    background-color: #180029;
+    color: white;
+    font-size: 16px;
+    width: 60px;
+    margin: 0px;
+    border: 2px solid #9a7ba6;
+}
+
+QComboBox#modeBox:down-arrow {
+    color: #ffffff;
+}
+
+QComboBox#modeBox QAbstractItemView {
+    color: #ffffff;
+    background-color: #180029;
+}
+
+QComboBox#modeBox QAbstractItemView::item:selected {
+    color: #ffffff;
+    background-color: #280040;
+    /* border: none; */
+}
+
+QComboBox#modeBox QAbstractItemView::item:hover {
+    color: #ffffff;
+    background-color: #280040;
+}
+
+QPushButton#startBtn {
+    background-color: green;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    margin: 0px;
+    
+}
+
+QPushButton#stopBtn {
+    background-color: red;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    margin: 0px;
+}
+
+QPushButton#startBtn:hover {
+    background-color: #015701;
+}
+
+QPushButton#stopBtn:hover {
+    background-color: #820303;
+}
