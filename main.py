@@ -44,6 +44,20 @@ class MainWindow(QMainWindow):
         self.compVisionLabel = QLabel("Computer Vision")
         self.compVisionLabel.setAlignment(Qt.AlignmentFlag.AlignHCenter)
         self.compVisionLabel.setObjectName("compVisionLabel")
+
+        self.systemInfo_panel = QWidget()
+        self.systemInfo_panel.setObjectName("systemInfo_panel")
+        self.systemInfo_panel.setFixedWidth(350)
+        self.systemInfoPanelHeading = QLabel("SYSTEM INFO")
+        self.systemInfoPanelHeading.setStyleSheet("color: #ffffff; font-weight: bold; font-size: 20px;")
+
+        self.systemOnlineOfflineLabel = QLabel("\u2b24 System Offline")
+        self.systemOnlineOfflineLabel.setAlignment(Qt.AlignmentFlag.AlignLeft)
+        self.systemOnlineOfflineLabel.setObjectName("systemOnlineOfflineLabel")
+
+        self.cameraStatusLabel = QLabel(f'Camera:{"&nbsp;" * 55}<span style="color: red; font-weight: bold;">STOPED</span>')
+        self.cameraStatusLabel.setAlignment(Qt.AlignmentFlag.AlignLeft)
+        self.cameraStatusLabel.setObjectName("systemInfoPannelSubInfo")
         
         self.modeBox = QComboBox()
         self.modeBox.setObjectName("modeBox")
@@ -51,42 +65,61 @@ class MainWindow(QMainWindow):
         self.modeBox.addItem("Grayscale")
         self.modeBox.addItem("Edges")
 
-        self.startBtn = QPushButton("START CAMERA")
+        self.startBtn = QPushButton("START SYSTEM")
         self.startBtn.setObjectName("startBtn")
         self.startBtn.clicked.connect(self.start_camera)
 
-        self.stopBtn = QPushButton("STOP CAMERA")
+        self.stopBtn = QPushButton("STOP SYSTEM")
         self.stopBtn.setObjectName("stopBtn")
         self.stopBtn.clicked.connect(self.stop_camera)
         self.stopBtn.hide()
 
+        self.visionlabversionText = QLabel("v1.1.0")
+        self.visionlabversionText.setStyleSheet("color: red;")
+
         self.side_panel = QWidget()
         self.side_panel.setObjectName("sidePanel")
-
-        main_layout = QHBoxLayout()
+        main_layout = QVBoxLayout()
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.setSpacing(0)
 
-        
-        main_layout.addWidget(self.frame_holder, stretch=68)
-        main_layout.addWidget(self.side_panel, stretch=32)
+        self.bottomBar_panel = QWidget()
+        self.bottomBar_panel.setObjectName("bottomBar_panel")
+
+        bottomBar_layout = QHBoxLayout(self.bottomBar_panel)
+        bottomBar_layout.addWidget(self.visionlabversionText)
+
+        frameSidePanelLayoutHolder_layout = QHBoxLayout()
+        frameSidePanelLayoutHolder_layout.setContentsMargins(20, 0, 20, 0)
+        frameSidePanelLayoutHolder_layout.addWidget(self.frame_holder, stretch=68)
+        frameSidePanelLayoutHolder_layout.addWidget(self.side_panel, stretch=32)
+
+        # main_layout.addWidget(self.frame_holder, stretch=68)
+        # main_layout.addWidget(self.side_panel, stretch=32)
+        main_layout.addLayout(frameSidePanelLayoutHolder_layout, stretch=95)
+        main_layout.addWidget(self.bottomBar_panel, stretch=5)
 
         frame_layout = QVBoxLayout(self.frame_holder)
+        frame_layout.setContentsMargins(0, 0, 0, 0)
+        frame_layout.addWidget(self.cameraLabel)
 
-        frame_layout.addWidget(self.cameraLabel, stretch=1)
-
+        systemInfo_layout = QVBoxLayout(self.systemInfo_panel)
+        systemInfo_layout.addWidget(self.systemInfoPanelHeading)
+        systemInfo_layout.addWidget(self.systemOnlineOfflineLabel)
+        systemInfo_layout.addWidget(self.cameraStatusLabel)
         
         side_layout = QVBoxLayout(self.side_panel)
-        side_layout.setContentsMargins(20, 15, 20, 30)
+        side_layout.setAlignment(Qt.AlignmentFlag.AlignHCenter)
+        side_layout.setContentsMargins(0, 35, 0, 35)
         side_layout.setSpacing(0)
-
         side_layout.addWidget(self.headingLabel)
         side_layout.addWidget(self.compVisionLabel)
-        side_layout.addWidget(self.modeBox)
         side_layout.addStretch(1)
+        side_layout.addWidget(self.systemInfo_panel)
+        side_layout.addStretch(1)
+        side_layout.addWidget(self.modeBox)
         side_layout.addWidget(self.startBtn)
         side_layout.addWidget(self.stopBtn)
-        
 
         container = QWidget()
         container.setLayout(main_layout)
@@ -97,7 +130,10 @@ class MainWindow(QMainWindow):
     def start_camera(self):
 
         self.cameraLabel.setText("Camera is starting...")
-        self.cameraLabel.setStyleSheet("color: #FF3366; font-weight: bold;")
+        self.cameraLabel.setStyleSheet("color: green; font-weight: bold;")
+        self.systemOnlineOfflineLabel.setText("\u2b24 System is Starting")
+        self.systemOnlineOfflineLabel.setStyleSheet("color: green")
+        self.cameraStatusLabel.setText(f'Camera:{"&nbsp;" * 45}<span style="color: green; font-weight: bold;">STARTING...</span>')
         self.startBtn.hide()
         self.stopBtn.show()
 
@@ -112,7 +148,10 @@ class MainWindow(QMainWindow):
         self.timer.stop()
         self.camera.release()
         self.cameraLabel.setText("Camera is off")
-        self.cameraLabel.setStyleSheet("color: #FF3366; font-weight: bold;")
+        self.cameraLabel.setStyleSheet("color: red; font-weight: bold;")
+        self.systemOnlineOfflineLabel.setText("\u2b24 System Offline")
+        self.systemOnlineOfflineLabel.setStyleSheet("color: red")
+        self.cameraStatusLabel.setText(f'Camera:{"&nbsp;" * 55}<span style="color: red; font-weight: bold;">STOPED</span>')
         self.startBtn.show()
         self.stopBtn.hide()
     
@@ -175,6 +214,9 @@ class MainWindow(QMainWindow):
         painter.end()
 
         self.cameraLabel.setPixmap(rounded_pixmap)
+        self.systemOnlineOfflineLabel.setText("\u2b24 System Online")
+        self.systemOnlineOfflineLabel.setStyleSheet("color: green")
+        self.cameraStatusLabel.setText(f'Camera:{"&nbsp;" * 50}<span style="color: green; font-weight: bold;">RUNNING</span>')
         self.cameraLabel.setContentsMargins(0, 0, 0, 0)
 
 

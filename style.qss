@@ -11,7 +11,6 @@ QWidget#frame_holder {
 }
 
 QWidget#side_panel {
-    width: 500px;
     background-color: #000;
 }
 
@@ -34,6 +33,23 @@ QLabel#compVisionLabel {
     font-size: 15px;
     font-weight: bold;
     margin-top: -5px;
+}
+
+QWidget#systemInfo_panel {
+    background-color: #161D26;
+    border: 2px solid #26313D;
+    border-radius: 12px;
+}
+
+QLabel#systemOnlineOfflineLabel {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+QLabel#systemInfoPannelSubInfo{
+    color: #8B949E;
+    font-size: 15px;
 }
 
 QComboBox#modeBox {
@@ -92,4 +108,8 @@ QPushButton#startBtn:hover {
 
 QPushButton#stopBtn:hover {
     background-color: #820303;
+}
+
+QWidget#bottomBar_panel {
+    background-color: #ffffff;
 }
