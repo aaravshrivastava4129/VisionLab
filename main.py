@@ -75,8 +75,8 @@ class MainWindow(QMainWindow):
         self.stopBtn.clicked.connect(self.stop_camera)
         self.stopBtn.hide()
 
-        self.visionlabversionText = QLabel("v1.1.0")
-        self.visionlabversionText.setStyleSheet("color: red;")
+        self.visionlabversionText = QLabel("v1.1.2")
+        self.visionlabversionText.setStyleSheet("color: #8B949E;")
 
         self.side_panel = QWidget()
         self.side_panel.setObjectName("sidePanel")

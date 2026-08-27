@@ -109,5 +109,5 @@ QPushButton#stopBtn:hover {
 }
 
 QWidget#bottomBar_panel {
-    background-color: #ffffff;
+    border-top: 4px solid #26313D;
 }
