@@ -1,5 +1,5 @@
 # VisonLab
-![Version](https://img.shields.io/badge/version-v1.0-00D4FF)
+![Version](https://img.shields.io/badge/version-v1.1.1-00D4FF)
 ![Status](https://img.shields.io/badge/status-early%20development-orange)
 
 
