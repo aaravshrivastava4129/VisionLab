@@ -2,12 +2,10 @@ QMainWindow {
     background-color: #0D1117;
 }
 
-QWidget#frame_holder {
-    background-color: #0D1117;
+QFrame#frame_holder {
     border: 2px solid #26313D;
     border-radius: 12px;
-    margin: 33px 5px 33px 5px;
-    padding: 0px;
+    margin: 18px 0px 18px 0px;
 }
 
 QWidget#side_panel {

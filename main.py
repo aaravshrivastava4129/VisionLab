@@ -1,8 +1,8 @@
 import sys
 import cv2
 
-from PySide6.QtCore import QTimer, Qt, QEvent, QThread
-from PySide6.QtGui import QImage, QPixmap, QPainter, QPainterPath
+from PySide6.QtCore import QTimer, Qt, QEvent
+from PySide6.QtGui import QImage, QPixmap, QPainter, QPainterPath, QPen, QColor
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -12,7 +12,8 @@ from PySide6.QtWidgets import (
     QHBoxLayout,
     QWidget,
     QComboBox,
-    QMessageBox
+    QMessageBox,
+    QFrame
 )
 
 class MainWindow(QMainWindow):
@@ -33,7 +34,7 @@ class MainWindow(QMainWindow):
         self.cameraLabel.setContentsMargins(0, 0, 0, 0)
         self.cameraLabel.setScaledContents(False)
 
-        self.frame_holder = QWidget()
+        self.frame_holder = QFrame()
         self.frame_holder.setObjectName("frame_holder")
 
 
@@ -100,7 +101,7 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(self.bottomBar_panel, stretch=5)
 
         frame_layout = QVBoxLayout(self.frame_holder)
-        frame_layout.setContentsMargins(0, 0, 0, 0)
+        frame_layout.setContentsMargins(2, 0, 2, 0)
         frame_layout.addWidget(self.cameraLabel)
 
         systemInfo_layout = QVBoxLayout(self.systemInfo_panel)
