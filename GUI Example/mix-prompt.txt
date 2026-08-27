@@ -1,0 +1,312 @@
+Create a high-fidelity desktop GUI concept for a professional computer-vision application called "VisionLab".
+
+Use the attached reference images as inspiration, but create a NEW design. Combine the minimalism and professional structure of the first reference with a restrained amount of the cyan technical/HUD styling from the second reference.
+
+IMPORTANT DESIGN GOAL:
+The result must look like real professional engineering software used in an AI, robotics, or computer-vision laboratory.
+
+It should feel:
+- Minimal
+- Professional
+- Technical
+- Modern
+- Futuristic but restrained
+- Clean
+- Functional
+- Suitable for long-term daily use
+
+Do NOT make it look like a cyberpunk game interface.
+
+==================================================
+LAYOUT
+==================================================
+
+Keep this overall structure:
+
+┌─────────────────────────────────────────────────────┐
+│                  VisionLab                          │
+├──────────────────────────────────────┬──────────────┤
+│                                      │              │
+│                                      │   CONTROL    │
+│                                      │    PANEL     │
+│            CAMERA FEED               │              │
+│                                      │              │
+│                                      │              │
+├──────────────────────────────────────┴──────────────┤
+│ Status bar                                           │
+└─────────────────────────────────────────────────────┘
+
+Camera area:
+- Approximately 75% of the width.
+- Control sidebar approximately 25%.
+- Camera feed is the dominant element.
+- Sidebar must remain compact and organized.
+- No huge empty areas.
+
+==================================================
+COLOR SYSTEM
+==================================================
+
+Use a dark neutral base:
+
+Background:
+#0D1117
+
+Sidebar:
+#111820
+
+Secondary panels:
+#161D26
+
+Borders:
+#26313D
+
+Primary text:
+#F0F3F6
+
+Secondary text:
+#8B949E
+
+Primary accent:
+#00CFE8
+
+Success:
+#2EA043
+
+Danger:
+#F85149
+
+Use cyan sparingly.
+
+Cyan should appear on:
+- active controls
+- important information
+- small status indicators
+- subtle camera HUD markers
+- selected elements
+
+Do NOT make everything glow cyan.
+
+==================================================
+CAMERA AREA
+==================================================
+
+The camera feed should remain visually dominant.
+
+Use:
+- Thin subtle border
+- Very subtle cyan accent around the active camera area
+- Small corner-bracket HUD markers inspired by scientific instruments
+- Minimal technical information overlay
+
+For example:
+
+Top-left:
+
+CAMERA 01
+LIVE
+30 FPS
+
+Top-right:
+
+SYSTEM ONLINE
+
+These overlays should be small and unobtrusive.
+
+Do not cover important parts of the camera image.
+
+The camera should look like an actual live video feed, not a decorative image.
+
+==================================================
+SIDEBAR
+==================================================
+
+Create a clean professional control panel.
+
+At the top:
+
+VISIONLAB
+Computer Vision
+
+Below it:
+
+● SYSTEM ONLINE
+
+Use a small green status indicator.
+
+--------------------------------
+
+VISION MODE
+
+[ Normal ▼ ]
+
+Dropdown options:
+
+Normal
+Grayscale
+Edge Detection
+Hand Detection
+Object Detection
+
+Use a subtle cyan outline when the dropdown is active.
+
+--------------------------------
+
+CAMERA
+
+Status: RUNNING
+Resolution: 640 × 480
+FPS: 30
+
+--------------------------------
+
+CONTROLS
+
+[ START CAMERA ]
+[ STOP CAMERA ]
+
+START:
+- Cyan primary button
+- Subtle cyan hover effect
+
+STOP:
+- Restrained red button
+- No excessive glow
+
+Buttons should be compact and professional.
+
+--------------------------------
+
+INFORMATION
+
+Current Mode: Normal
+Detection: Idle
+Frames Processed: 24,512
+
+Keep this section visually quiet.
+
+==================================================
+SUBTLE FUTURISTIC ELEMENTS
+==================================================
+
+Borrow only subtle elements from futuristic robotics interfaces:
+
+- Thin cyan corner brackets around the camera
+- Small status dots
+- Very thin accent lines
+- Tiny technical labels
+- Minimal cyan highlights
+- Subtle illuminated active states
+
+Do NOT use:
+- Heavy neon glow
+- Large holographic elements
+- Excessive borders
+- Giant HUD graphics
+- Decorative circuitry
+- Cyberpunk patterns
+- Excessive gradients
+- Excessive rounded cards
+- Large glowing text
+
+The futuristic feeling should come from precision and restraint, not decoration.
+
+==================================================
+TYPOGRAPHY
+==================================================
+
+Use a modern clean sans-serif font similar to:
+
+Inter
+Segoe UI
+SF Pro
+
+VisionLab title can be slightly larger and stronger.
+
+Everything else should use moderate font sizes.
+
+Avoid oversized text.
+
+==================================================
+CAMERA STATUS BAR
+==================================================
+
+At the very bottom create a thin status bar:
+
+CAMERA: ACTIVE | FPS: 30 | RES: 640×480 | MODE: Normal | VisionLab v1.0
+
+Use:
+- white/gray text for normal information
+- green for ACTIVE
+- cyan for important values
+
+==================================================
+UI COMPONENT STYLE
+==================================================
+
+Use:
+- 4–8px corner radius
+- thin borders
+- consistent spacing
+- subtle shadows
+- clean alignment
+- restrained contrast
+
+No excessive card-based design.
+
+The interface should feel like one cohesive application rather than many floating boxes.
+
+==================================================
+FUTURE-PROOF DESIGN
+==================================================
+
+The UI will eventually support:
+
+Hand Detection
+Object Detection
+Gesture Recognition
+Computer Vision Algorithms
+AI/ML Models
+3D visualization
+
+Therefore leave enough visual space for:
+
+- hand landmark overlays
+- object bounding boxes
+- detection labels
+- confidence scores
+- gesture information
+
+Do not fill the camera area with decorative elements.
+
+==================================================
+IMPLEMENTATION REALISM
+==================================================
+
+This is a desktop application that will be implemented using:
+
+Python
+PySide6
+OpenCV
+Qt Style Sheets (QSS)
+
+Design components that can realistically be implemented using:
+
+QMainWindow
+QWidget
+QLabel
+QPushButton
+QComboBox
+QFrame
+QVBoxLayout
+QHBoxLayout
+
+Do not include web browser UI, mobile UI, laptops, phones, or external devices.
+
+The final image should look like a screenshot of a REAL professional computer-vision application, not concept art.
+
+Resolution: 1920 × 1080.
+
+Overall design philosophy:
+
+"Minimal professional engineering software with subtle futuristic computer-vision aesthetics."

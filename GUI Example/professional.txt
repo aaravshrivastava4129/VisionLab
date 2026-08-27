@@ -1,0 +1,151 @@
+Create a high-fidelity minimalistic professional desktop GUI concept for a computer-vision application called "VisionLab".
+
+Use the attached screenshot only as a structural reference. Keep the basic application structure:
+- Large live camera feed on the left.
+- Narrow control sidebar on the right.
+- Application title at the top.
+- Vision mode selector.
+- Camera controls at the bottom.
+
+DESIGN DIRECTION:
+
+Make the interface look like professional engineering software used in an AI/robotics laboratory.
+
+Style:
+- Minimalistic
+- Clean
+- Precise
+- Modern
+- Professional
+- Technical
+- Calm
+- No unnecessary decoration
+
+COLOR PALETTE:
+
+Use a very dark neutral interface:
+- Main background: #0D1117
+- Sidebar: #111820
+- Slightly lighter panels: #161D26
+- Borders: #252D36
+- Primary text: #F0F3F6
+- Secondary text: #8B949E
+- Primary accent: #00B8D9
+- Success: #2EA043
+- Danger: #F85149
+
+Use cyan only for important active elements. Do not make the entire interface glow.
+
+CAMERA AREA:
+
+The camera feed should occupy most of the application.
+
+- Clean rectangular video area.
+- Very thin subtle border.
+- No heavy decorative HUD.
+- No excessive overlays.
+- Small unobtrusive information in one corner:
+  "CAMERA 01"
+  "LIVE"
+  "30 FPS"
+- Preserve the camera aspect ratio.
+- Keep the actual video clearly visible and dominant.
+
+SIDEBAR:
+
+Create a clean narrow sidebar.
+
+Top:
+VISIONLAB
+Small subtitle:
+"Computer Vision"
+
+Status:
+● Camera Online
+
+Then:
+
+VISION MODE
+
+[ Normal ▼ ]
+
+Options:
+- Normal
+- Grayscale
+- Edge Detection
+- Hand Detection
+- Object Detection
+
+Then a small section:
+
+CAMERA
+
+Resolution
+640 × 480
+
+Frame Rate
+30 FPS
+
+Then place controls near the bottom:
+
+[ START CAMERA ]
+
+[ STOP CAMERA ]
+
+Use a cyan accent for the primary action and a restrained red accent for Stop.
+
+BOTTOM STATUS BAR:
+
+A very thin status bar across the bottom:
+
+Camera: Online | FPS: 30 | Resolution: 640×480 | Mode: Normal | VisionLab v1.0
+
+TYPOGRAPHY:
+
+Use a clean modern sans-serif font similar to:
+- Inter
+- Segoe UI
+- SF Pro
+
+Use medium font weights. Avoid huge headings.
+
+COMPONENT DESIGN:
+
+- Small 4–6px corner radius.
+- Thin borders.
+- Consistent spacing.
+- No excessive cards.
+- No gradients.
+- No glassmorphism.
+- No giant shadows.
+- No glowing neon effects.
+- No excessive icons.
+- No decorative graphics.
+
+LAYOUT:
+
+Use a strong grid and precise alignment.
+
+The camera should occupy approximately 75% of the window width and the sidebar approximately 25%.
+
+The sidebar should feel like a professional control panel, not a futuristic game interface.
+
+IMPORTANT:
+
+This is a desktop application UI that will later be implemented using PySide6 and Qt Style Sheets (QSS).
+
+Use realistic components that can actually be implemented with:
+QMainWindow
+QWidget
+QLabel
+QPushButton
+QComboBox
+QFrame
+QVBoxLayout
+QHBoxLayout
+
+Do not add browser elements, web navigation, phones, laptops, or external devices.
+
+The final result should look like a real professional computer-vision development tool rather than a concept-art sci-fi dashboard.
+
+Resolution: 1920×1080.

@@ -1,0 +1,101 @@
+Create a high-fidelity futuristic desktop GUI concept for a Python computer-vision application called "VisionLab".
+
+Use the attached screenshot as the structural reference. Keep the fundamental layout:
+- Large live camera/video area on the left, occupying roughly 70–75% of the window.
+- A right-side control panel occupying roughly 25–30%.
+- VisionLab title at the top of the right panel.
+- Processing mode dropdown.
+- Camera control buttons at the bottom.
+- Keep the application as a practical desktop software interface, NOT a website.
+
+Redesign the interface into a professional futuristic AI/computer-vision workstation.
+
+VISUAL STYLE:
+- Dark futuristic scientific/robotics aesthetic.
+- Main background: near-black / deep navy (#080B10).
+- Panels: slightly lighter dark navy (#101722).
+- Primary accent: electric cyan (#00D4FF).
+- Secondary accent: subtle violet/blue.
+- Green only for active/online states.
+- Red only for stop/error states.
+- Avoid excessive neon glow.
+- Avoid childish gaming UI.
+- Avoid cyberpunk clutter.
+- Clean, minimal, technical, professional.
+- Inspired by advanced robotics laboratories, spacecraft mission-control software, scientific instruments and modern AI research interfaces.
+
+CAMERA AREA:
+- Make the camera feed the visual focus.
+- Put it inside a subtle thin cyan/dark border.
+- Add a very subtle HUD-style overlay around the camera feed.
+- Small technical indicators such as:
+  "CAMERA 01"
+  "LIVE"
+  "30 FPS"
+  "640 × 480"
+- Add subtle corner brackets around the video area.
+- Keep overlays minimal so the camera remains clearly visible.
+- Do not obscure the camera image.
+
+RIGHT SIDEBAR:
+Create a structured control panel instead of a large empty area.
+
+Top:
+- VisionLab logo/title.
+- Small status indicator: "SYSTEM ONLINE".
+
+Processing section:
+- Label: "VISION MODE"
+- Modern dark dropdown containing:
+  Normal
+  Grayscale
+  Edge Detection
+  Hand Detection
+  Object Detection
+
+Camera section:
+- "CAMERA"
+- Camera status
+- Resolution
+- FPS
+
+Controls:
+- Large cyan primary button: "START CAMERA"
+- Red secondary button: "STOP CAMERA"
+- Buttons should have subtle hover/active states.
+
+Information section:
+- "PROCESSING"
+- Current mode
+- Frames processed
+- Detection status
+
+BOTTOM STATUS BAR:
+Add a thin status bar across the bottom containing:
+- Camera status
+- FPS
+- Resolution
+- Processing mode
+- "VisionLab v1.0"
+
+LAYOUT:
+- Strong visual hierarchy.
+- Plenty of controlled spacing.
+- Consistent alignment.
+- Modern typography similar to Inter, SF Pro, or Segoe UI.
+- Medium rounded corners, around 6–10px.
+- Thin borders.
+- Subtle shadows.
+- No giant empty regions.
+- No unnecessary cards everywhere.
+
+IMPORTANT:
+This is a desktop application UI concept that will later be implemented using PySide6 and Qt Style Sheets (QSS).
+Therefore, every component should be realistic and implementable using standard Qt widgets such as:
+QMainWindow, QWidget, QLabel, QPushButton, QComboBox, QSlider, QFrame and layouts.
+
+Do NOT add browser navigation, web-page elements, mouse cursors, phones, laptops, or external devices.
+
+Make the final result look like a real professional computer-vision application used by a robotics/AI engineer, not a generic futuristic dashboard.
+
+Resolution: 1920×1080 desktop application screenshot.
