@@ -61,6 +61,24 @@ python main.py
 
 ---
 
+## 🤖 AI Assistance
+
+AI tools were used during the development of VisionLab as a learning and development aid.
+
+AI assistance was used for:
+- Understanding PySide6 concepts and Qt layouts.
+- Explaining OpenCV image-processing concepts.
+- Debugging and identifying programming mistakes.
+- Discussing GUI structure and design ideas.
+- Improving and reviewing documentation.
+- Brainstorming future project features and architecture.
+
+The project's implementation, testing, integration, and final decisions were done by myself. AI-generated suggestions were reviewed, modified, and tested before being included in the project.
+
+AI was used as a development assistant, not as a replacement for understanding the code.
+
+---
+
 ## 🎬 Demo Video
 *This project is in active development, so the videos provided in the README may vary from the actual product.
 
@@ -109,11 +127,11 @@ VisionLab houses multiple vision modes, with the intention of expanding upon the
 
 The following vision modes are available in the current version:
 
-Normal — The camera view is displayed normally
+- Normal — The camera view is displayed normally
 
-Grayscale — The camera view is converted to grayscale
+- Grayscale — The camera view is converted to grayscale
 
-Edges — The camera view has its edges extracted
+- Edges — The camera view has its edges extracted
 
 ### 🎛️ Vision Mode Control
 
@@ -127,15 +145,15 @@ The current status of the computer vision system is displayed alongside the came
 
 Some of the information that can be viewed includes:
 
-System status
+- System status
 
-Camera status
+- Camera status
 
-Camera resolution
+- Camera resolution
 
-FPS counter
+- FPS counter
 
-Current vision mode
+- Current vision mode
 
 ### ⚡ Real-Time Performance Display
 
@@ -199,19 +217,19 @@ The future versions of VisionLab will implement additional computer vision modes
 
 Some of the following are just a few examples of what computer vision modes will be possible in the future:
 
-Hand tracking
+- Hand tracking
 
-Object detection
+- Object detection
 
-Motion detection
+- Motion detection
 
-Face/feature tracking
+- Face/feature tracking
 
-Gesture detection
+- Gesture detection
 
-Real-time effects
+- Real-time effects
 
-Interactive vision experiments
+- Interactive vision experiments
 
 ---
 
@@ -221,25 +239,25 @@ This roadmap highlights the current progress, future updates, and future goals t
 
 ### ✅ Completed
 
-Real-time camera feed
+- Real-time camera feed
 
-Normal vision mode
+- Normal vision mode
 
-Grayscale vision mode
+- Grayscale vision mode
 
-Edges vision mode
+- Edges vision mode
 
-FPS counter
+- FPS counter
 
-Camera status
+- Camera status
 
-Resolution information
+- Resolution information
 
-Vision mode status
+- Vision mode status
 
-Start/stop controls
+- Start/stop controls
 
-Dedicated computer-vision interface
+- Dedicated computer-vision interface
 
 ### 🔄 Next
 
