@@ -50,13 +50,20 @@ QLabel#systemInfoPannelSubInfo{
     font-size: 15px;
 }
 
+QWidget#visionMode_panel {
+    background-color: #161D26;
+    border: 2px solid #26313D;
+    border-radius: 12px;
+}
+
 QComboBox#modeBox {
-    background-color: #180029;
+    background-color: #161D26;
     color: white;
     font-size: 16px;
     width: 60px;
-    margin: 0px;
-    border: 2px solid #9a7ba6;
+    border: 2px solid #00CFE8;
+    border-radius: 5px;
+    padding-left: 10px;
 }
 
 QComboBox#modeBox:down-arrow {
@@ -65,18 +72,29 @@ QComboBox#modeBox:down-arrow {
 
 QComboBox#modeBox QAbstractItemView {
     color: #ffffff;
-    background-color: #180029;
+    background-color: #0D1117;
+    border: 2px solid #26313D;
+    border-radius: 5px;
 }
 
 QComboBox#modeBox QAbstractItemView::item:selected {
     color: #ffffff;
-    background-color: #280040;
-    /* border: none; */
+    background-color: #161D26;
+    border: none;
+    outline: 0px;
+    modeBox.view().setFocusPolicy(Qt.NoFocus)
 }
 
 QComboBox#modeBox QAbstractItemView::item:hover {
     color: #ffffff;
-    background-color: #280040;
+    background-color: #0f141c;
+    border: none;
+}
+
+QWidget#information_panel {
+    background-color: #161D26;
+    border: 2px solid #26313D;
+    border-radius: 12px;
 }
 
 QPushButton#startBtn {
