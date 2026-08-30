@@ -11,6 +11,56 @@ The current version features real-time camera processing with multiple vision mo
 
 ---
 
+# 📦 Installation
+
+## Method-1
+
+STEP 1: Install .zip file from <a href="https://github.com/aaravshrivastava4129/VisonLab/releases/tag/v1.2.2">Releases</a>.
+
+STEP 2: Extract it.
+
+STEP 3: Go to VisionLab -> dist -> main
+
+STEP 4: Double click main.exe
+
+---
+
+## Method-2
+
+STEP 1: Clone the repository
+
+```bash
+
+git clone https://github.com/aaravshrivastava4129/VisonLab.git
+
+```
+
+STEP 2: Go to the project folder
+
+```bash
+
+cd VisionLab
+
+```
+
+STEP 3: Install the required packages
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
+STEP 4: Run the project
+
+```bash
+
+python main.py
+
+```
+
+---
+
 ## 🎬 Demo Video
 *This project is in active development, so the videos provided in the README may vary from the actual product.
 
@@ -162,42 +212,6 @@ Gesture detection
 Real-time effects
 
 Interactive vision experiments
-
----
-
-# 📦 Installation
-
-Clone the repository
-
-```bash
-
-git clone https://github.com/aaravshrivastava4129/VisonLab.git
-
-```
-
-Go to the project folder
-
-```bash
-
-cd VisionLab
-
-```
-
-Install the required packages
-
-```bash
-
-pip install -r requirements.txt
-
-```
-
-Run the project
-
-```bash
-
-python main.py
-
-```
 
 ---
 
