@@ -3,7 +3,7 @@ import cv2
 import time
 
 from PySide6.QtCore import QTimer, Qt, QEvent
-from PySide6.QtGui import QImage, QPixmap, QPainter, QPainterPath, QPen, QColor
+from PySide6.QtGui import QImage, QPixmap, QPainter, QPainterPath, QPen, QColor, QIcon
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -29,6 +29,8 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("VisionLab")
         self.resize(1920, 1040)
+
+        self.setWindowIcon(QIcon("assets/logo.png"))
 
         self.cameraLabel = QLabel("Camera is off")
         self.cameraLabel.setObjectName("cameraLabel")
@@ -103,7 +105,7 @@ class MainWindow(QMainWindow):
         self.stopBtn.clicked.connect(self.stop_camera)
         self.stopBtn.hide()
 
-        self.visionlabversionText = QLabel("VisionLab v1.2.1")
+        self.visionlabversionText = QLabel("VisionLab v1.2.2")
         self.visionlabversionText.setStyleSheet("color: #8B949E; font-size: 14px")
         self.visionlabversionText.setAlignment(Qt.AlignmentFlag.AlignRight)
 

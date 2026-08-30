@@ -1,6 +1,6 @@
 # **VisionLab**
 
-![Version](https://img.shields.io/badge/version-v1.2.1-blue)
+![Version](https://img.shields.io/badge/version-v1.2.2-blue)
 ![Status](https://img.shields.io/badge/status-active%20development-orange)
 
 ### Real-Time Computer Vision & Gesture-Based Interaction
@@ -265,7 +265,7 @@ The project is transitioning from being a regular computer vision application to
 
 ## 📌 Current Version
 
-VisionLab v1.2.1
+VisionLab v1.2.2
 
 Status: 🚧 Active Development
 
