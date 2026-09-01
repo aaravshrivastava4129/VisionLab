@@ -2,8 +2,8 @@ import sys
 import cv2
 import time
 
-from PySide6.QtCore import QTimer, Qt, QEvent
-from PySide6.QtGui import QImage, QPixmap, QPainter, QPainterPath, QPen, QColor, QIcon
+from PySide6.QtCore import QTimer, Qt
+from PySide6.QtGui import QImage, QPixmap, QPainter, QPainterPath, QIcon
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
