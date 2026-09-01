@@ -1,4 +1,4 @@
-# <img src="assets/Logo - Dark Background.png" width="5%"> **VisionLab**
+# <img src="assets/VisonLab - Banner.png">
 ![Version](https://img.shields.io/badge/version-v1.2.3-blue)
 ![Status](https://img.shields.io/badge/status-active%20development-orange)
 
@@ -12,7 +12,7 @@ The current version features real-time camera processing with multiple vision mo
 
 <p style="font-size: 20px; font-weight: bolder;">Method-1</p>
 
-STEP 1: Install .zip file from <a href="https://github.com/aaravshrivastava4129/VisonLab/releases/tag/v1.2.2">Releases</a>.
+STEP 1: Install .zip file from <a href="https://github.com/aaravshrivastava4129/VisonLab/releases/tag/v1.2.3">Releases</a>.
 
 STEP 2: Extract it.
 
