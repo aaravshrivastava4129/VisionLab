@@ -105,7 +105,7 @@ class MainWindow(QMainWindow):
         self.stopBtn.clicked.connect(self.stop_camera)
         self.stopBtn.hide()
 
-        self.visionlabversionText = QLabel("VisionLab v1.2.2")
+        self.visionlabversionText = QLabel("VisionLab v1.2.3")
         self.visionlabversionText.setStyleSheet("color: #8B949E; font-size: 14px")
         self.visionlabversionText.setAlignment(Qt.AlignmentFlag.AlignRight)
 

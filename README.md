@@ -1,5 +1,5 @@
-# **VisionLab**
-![Version](https://img.shields.io/badge/version-v1.2.2-blue)
+# <img src="assets/Logo - Dark Background.png" width="5%"> **VisionLab**
+![Version](https://img.shields.io/badge/version-v1.2.3-blue)
 ![Status](https://img.shields.io/badge/status-active%20development-orange)
 
 VisionLab is a real-time computer vision experiment with the intention of exploring the possibility of new ways to interact with and control computer vision through a camera.
