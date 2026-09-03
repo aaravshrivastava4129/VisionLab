@@ -20,6 +20,8 @@ STEP 3: Go to VisionLab -> dist -> main
 
 STEP 4: Double-click main.exe
 
+> **Note:** The application may take a few minutes to launch. Please be patient while it starts.
+
 <p style="font-size: 20px; font-weight: bolder;">Method-2</p>
 
 STEP 1: Clone the repository
@@ -34,7 +36,7 @@ STEP 2: Go to the project folder
 
 ```bash
 
-cd VisionLab
+cd VisonLab
 
 ```
 
@@ -54,11 +56,11 @@ python main.py
 
 ```
 
+> **Note:** The application may take a few minutes to launch. Please be patient while it starts.
+
 ---
 
 # How To Use
-
-To open project go to **VisionLab -> dist -> main** and double-click **main.exe**
 
 Click **START SYSTEM** button to start camera.
 
